@@ -15,15 +15,15 @@ public class Participante {
     private Long id;
 
     @NotEmpty(message = "O campo nome não pode ser em branco")
-    @Size(min = 1, max = 100)
+    @Size(min = 1, max = 60)
     private String nome;
 
     @NotEmpty(message = "O campo apelido não pode ser em branco")
-    @Size(min = 1, max = 20)
+    @Size(min = 1, max = 60)
     private String apelido;
 
     @NotEmpty(message = "O campo data de nascimento não pode ser em branco")
-    @Size(min = 1, max = 8)
+    @Size(min = 1, max = 60)
     private String dataNascimento;
 
     @NotEmpty(message = "O campo sexo não pode ser em branco")
@@ -35,7 +35,7 @@ public class Participante {
     private String email;
 
     @NotEmpty(message = "O WhatsApp não pode ser em branco")
-    @Size(min = 1, max = 11)
+    @Size(min = 1, max = 60)
     private String whatsapp;
 
     @NotEmpty(message = "O nome da mãe não pode ser em branco")
@@ -43,7 +43,7 @@ public class Participante {
     private String nomeMae;
 
     @NotEmpty(message = "O fone da mãe não pode ser em branco")
-    @Size(min = 1, max = 11)
+    @Size(min = 1, max = 60)
     private String foneMae;
 
     @NotEmpty(message = "O nome do pai não pode ser em branco")
@@ -51,7 +51,7 @@ public class Participante {
     private String nomePai;
 
     @NotEmpty(message = "O fone do pai não pode ser em branco")
-    @Size(min = 1, max = 11)
+    @Size(min = 1, max = 60)
     private String fonePai;
 
     @NotEmpty(message = "O nome do contato não pode ser em branco")
@@ -59,7 +59,7 @@ public class Participante {
     private String pessoaContato;
 
     @NotEmpty(message = "O fone do contato não pode ser em branco")
-    @Size(min = 1, max = 11)
+    @Size(min = 1, max = 60)
     private String foneContato;
 
     @NotEmpty(message = "O campo de medicação não pode ser em branco")
@@ -72,5 +72,5 @@ public class Participante {
 
     @NotEmpty(message = "O campo de restrição alimentar não pode ser em branco")
     @Size(min = 1, max = 60)
-    private String restricacaoAlimentar;
+    private String restricaoAlimentar;
 }

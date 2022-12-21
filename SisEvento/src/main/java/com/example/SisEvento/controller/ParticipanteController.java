@@ -50,7 +50,7 @@ public class ParticipanteController {
                     record.setFoneContato(participante.getFoneContato());
                     record.setMedicacao(participante.getMedicacao());
                     record.setAlergia(participante.getAlergia());
-                    record.setRestricacaoAlimentar(participante.getRestricacaoAlimentar());
+                    record.setRestricaoAlimentar(participante.getRestricaoAlimentar());
                     Participante updated = participanteRepository.save(record);
                     return ResponseEntity.ok().body(updated);
                 }).orElse(ResponseEntity.notFound().build());
