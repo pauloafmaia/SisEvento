@@ -1,9 +1,6 @@
 package com.example.SisEvento.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
@@ -15,4 +12,7 @@ public class Equipe {
     private Long id;
 
     private String nome;
+
+    @OneToOne(mappedBy = "equipe")
+    private Equipante equipante;
 }

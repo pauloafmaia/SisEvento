@@ -1,9 +1,6 @@
 package com.example.SisEvento.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
@@ -52,4 +49,8 @@ public class Equipante {
     @NotEmpty(message = "O campo de restrição alimentar não pode ser em branco")
     @Size(min = 1, max = 60)
     private String restricaoAlimentar;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "equipe_equipante")
+    private Equipe equipe;
 }
