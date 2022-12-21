@@ -62,15 +62,15 @@ public class Participante {
     @Size(min = 1, max = 60)
     private String foneContato;
 
-    @NotEmpty(message = "O campo de medicação não pode ser em branco")
+    @NotEmpty(message = "O campo medicação não pode ser em branco")
     @Size(min = 1, max = 60)
     private String medicacao;
 
-    @NotEmpty(message = "O campo de alergia não pode ser em branco")
+    @NotEmpty(message = "O campo alergia não pode ser em branco")
     @Size(min = 1, max = 60)
     private String alergia;
 
-    @NotEmpty(message = "O campo de restrição alimentar não pode ser em branco")
+    @NotEmpty(message = "O campo restrição alimentar não pode ser em branco")
     @Size(min = 1, max = 60)
     private String restricaoAlimentar;
 }
