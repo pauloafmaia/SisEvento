@@ -21,7 +21,7 @@ public class ParticipanteController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity findParticipanteById(@PathVariable Long id) {
+    public ResponseEntity getParticipanteById(@PathVariable Long id) {
         return participanteRepository.findById(id)
                 .map(record -> ResponseEntity.ok().body(record))
                 .orElse(ResponseEntity.notFound().build());
