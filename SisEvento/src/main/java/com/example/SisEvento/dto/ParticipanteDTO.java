@@ -11,7 +11,7 @@ public class ParticipanteDTO {
     private String dataNascimento;
     private String sexo;
     private String email;
-    private String whatsApp;
+    private String whatsapp;
     private String nomeMae;
     private String foneMae;
     private String nomePai;
